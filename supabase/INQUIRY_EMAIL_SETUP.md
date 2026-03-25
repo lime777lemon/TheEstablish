@@ -8,7 +8,7 @@
 ## 推奨構成（このリポジトリ用）
 
 1. **Resend**（メール送信 API）で `info@theestablish.jp` などに送る  
-2. **Vercel** の `api/notify-inquiry.js` が Resend を呼ぶ  
+2. **Vercel** の `api/notify-inquiry.js`（または別名 `api/inquiry.js`）が Resend を呼ぶ  
 3. **Supabase Database Webhook** が `INSERT` のたびにその API を叩く  
 
 ## 手順の概要
@@ -42,7 +42,7 @@
 3. **Table**: `contact_inquiries`  
 4. **Events**: `INSERT` のみ  
 5. **HTTP Request**  
-   - URL: `https://（あなたのVercelドメイン）/api/notify-inquiry`  
+   - URL: `https://（あなたのVercelドメイン）/api/notify-inquiry` または `/api/inquiry`（どちらも同じ処理）  
    - Method: `POST`  
    - Headers に例: `Content-Type` = `application/json` と `X-Webhook-Secret` = （`INQUIRY_WEBHOOK_SECRET` と同じ文字列）  
 
