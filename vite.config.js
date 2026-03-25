@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "./",
   server: {
     port: 5173,
     open: true,
@@ -10,6 +11,8 @@ export default defineConfig({
       input: {
         main: "index.html",
         webProgramming: "web-programming.html",
+        about: "about.html",
+        clientServices: "client-services.html",
         company: "company.html",
         tokushoho: "tokushoho.html",
         terms: "terms.html",

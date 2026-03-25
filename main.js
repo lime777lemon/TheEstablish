@@ -67,6 +67,11 @@
       "contact.formEmail": "Email",
       "contact.formMessage": "Message",
       "contact.formSubmit": "Send",
+      "contact.formSending": "Sending…",
+      "contact.formError":
+        "We could not send your message. Please try again or email info@theestablish.jp directly.",
+      "contact.formNotConfigured":
+        "The contact form is not connected yet. Please email info@theestablish.jp.",
       "contact.formSent":
         "Thank you — your message was sent. We will reply by email as soon as we can.",
       "contact.backHome": "Back to home",
@@ -172,7 +177,7 @@
       "ab.backHome": "Back to home",
       "terms.h1": "Terms of Service",
       "terms.updatedPrefix": "Last updated:",
-      "terms.updatedDate": "March 25, 2026",
+      "terms.updatedDate": "March 26, 2026",
       "terms.s1.h": "1. Agreement to these terms",
       "terms.s1.p":
         "<p>These Terms of Service (“Terms”) govern access to and use of the website at <a href=\"https://theestablish.jp/\">theestablish.jp</a> (the “Site”) operated by The Establish合同会社 (“we,” “us,” “our”), a company organized under the laws of Japan. The Site provides information about our business and ways to contact us.</p><p>By using the Site, you agree to these Terms and to our <a href=\"privacy.html\">Privacy Policy</a>, which describes how we process personal data. If you do not agree, please discontinue use.</p>",
@@ -200,6 +205,9 @@
       "terms.s9.h": "9. Deliverables and intellectual property (client engagements)",
       "terms.s9.p":
         "<p>Ownership, license scope, portfolio use, and other treatment of intellectual property rights in deliverables from paid engagements (including websites, designs, software, copy, and other creative output) are governed exclusively by the quotation, statement of work, or contract agreed in writing between you and us—not by these Terms alone.</p><p>Unless a separate written agreement expressly provides otherwise, no copyright or other rights in future deliverables are assigned or licensed merely because you requested an estimate, sent an inquiry, or used this Site.</p>",
+      "terms.s10.h": "10. Exclusion of anti-social forces",
+      "terms.s10.p":
+        "<p>You represent and warrant that you do not fall under organized crime groups (“Boryokudan”), Boryokudan members, Boryokudan-related companies, corporate extortionists (“Sokaiya”), groups engaging in criminal activities under the pretext of social campaigns, crime groups specialized in intellectual property or financial crimes, or any other person equivalent thereto (collectively, “Anti-Social Forces”), and that you are not substantially involved with Anti-Social Forces in any manner that would be recognized as cooperating with or supporting their activities.</p><p>You shall not, directly or through a third party, use violence, threats, fraud, intimidation, obstruction of our business, demands beyond legal responsibility, or any other conduct comparable thereto in connection with the Site or our services.</p><p>We do not engage in transactions with Anti-Social Forces. If we reasonably determine that you fall under Anti-Social Forces or have violated the preceding paragraph, we may, without prior notice, refuse or suspend your use of the Site, terminate any relevant relationship, or take other measures we deem appropriate, to the extent permitted by applicable law.</p>",
       "privacy.h1": "Privacy Policy",
       "privacy.updatedPrefix": "Last updated:",
       "privacy.updatedDate": "March 25, 2026",
@@ -217,7 +225,7 @@
         "<p>We use cookies and similar technologies where needed for the site to operate (for example security or basic performance) and, where applicable, to remember preferences or understand aggregate usage. You can control cookies through your browser settings. Where local law requires consent for non-essential cookies or similar technologies, we will obtain consent before using them.</p>",
       "privacy.s5.h": "5. Processors, sharing, and international transfers",
       "privacy.s5.p":
-        "<p>We do not sell personal information. We may share data with processors that assist our operations (such as hosting, email delivery, or transmission of contact form submissions) under confidentiality and appropriate data-processing arrangements, when required by law, or to protect our rights and the safety of users. If personal data is transferred outside Japan, we implement measures required under the APPI. Where the GDPR applies, we use appropriate safeguards for international transfers, such as standard contractual clauses or other lawful mechanisms.</p>",
+        "<p>We do not sell personal information. We may share data with processors that assist our operations (such as hosting, email delivery, or storing contact form submissions in a Supabase database — infrastructure may be located outside Japan) under confidentiality and appropriate data-processing arrangements, when required by law, or to protect our rights and the safety of users. If personal data is transferred outside Japan, we implement measures required under the APPI. Where the GDPR applies, we use appropriate safeguards for international transfers, such as standard contractual clauses or other lawful mechanisms.</p>",
       "privacy.s6.h": "6. Retention and security",
       "privacy.s6.p":
         "<p>We retain personal information only for as long as necessary for the purposes described in this Policy or as required by law. We apply reasonable technical and organizational measures to protect personal data. No transmission over the Internet is completely secure.</p>",
@@ -339,6 +347,11 @@
       "contact.formEmail": "メールアドレス",
       "contact.formMessage": "お問い合わせ内容",
       "contact.formSubmit": "送信",
+      "contact.formSending": "送信中…",
+      "contact.formError":
+        "送信に失敗しました。再度お試しいただくか、info@theestablish.jp までメールでご連絡ください。",
+      "contact.formNotConfigured":
+        "フォームの接続が未設定です。info@theestablish.jp までメールでお問い合わせください。",
       "contact.formSent": "送信ありがとうございました。追ってメールでご連絡します。",
       "contact.backHome": "ホームに戻る",
       "footer.linkedinLabel": "LinkedIn",
@@ -444,7 +457,7 @@
       "ab.backHome": "ホームに戻る",
       "terms.h1": "利用規約",
       "terms.updatedPrefix": "最終更新日：",
-      "terms.updatedDate": "2026年3月25日",
+      "terms.updatedDate": "2026年3月26日",
       "terms.s1.h": "1. 規約への同意",
       "terms.s1.p":
         "<p>本利用規約（以下「本規約」）は、The Establish合同会社（以下「当社」）が運営するウェブサイト（<a href=\"https://theestablish.jp/\">theestablish.jp</a>、以下「本サイト」）の利用条件を定めるものです。本サイトは当社の事業内容の紹介およびお問い合わせ窓口として提供されます。</p><p>本サイトを利用することにより、お客様は本規約および<a href=\"privacy.html\">プライバシーポリシー</a>（個人情報の取扱い）に同意したものとみなされます。同意いただけない場合は、利用を中止してください。</p>",
@@ -472,6 +485,9 @@
       "terms.s9.h": "9. 成果物および著作権（業務委託）",
       "terms.s9.p":
         "<p>有償の業務委託に基づく成果物（ウェブサイト、デザイン、プログラム、文章、画像その他の成果物を含みます）に関する著作権その他の知的財産権の帰属、利用許諾の範囲、ポートフォリオ等への掲載の可否その他の取扱いは、本規約ではなく、お客様と当社との間で書面により合意する見積書、作業範囲書、契約書等の個別契約により定めます。</p><p>書面による別段の合意がない限り、見積依頼、お問い合わせ、または本サイトの閲覧のみでは、将来納品される成果物に関する著作権その他の権利の譲渡または利用許諾は生じません。</p>",
+      "terms.s10.h": "10. 反社会的勢力の排除",
+      "terms.s10.p":
+        "<p>お客様は、自己が、暴力団、暴力団員、暴力団員でなくなった時から5年を経過しない者、暴力団準構成員、暴力団関係企業、総会屋等、社会運動等標ぼうゴロ又は特殊知能暴力集団等、その他これらに準ずる者（以下「反社会的勢力」といいます）に該当せず、かつ反社会的勢力と社会的に非難されるべき関係を有しないことを表明し、確約します。</p><p>お客様は、自ら又は第三者を利用して、本サイト又は当社の事業に関連して、暴力的な要求行為、法的な責任を超えた不当な要求行為、取引に関して脅迫的な言動をし、又は暴力を用いる行為、風説を流布し、偽計を用い又は威力を用いて当社の信用を毀損し、又は当社の業務を妨害する行為、その他これらに準ずる行為を行わないことを確約します。</p><p>当社は、反社会的勢力との間で取引を行いません。お客様が反社会的勢力に該当し、又は前項に違反したと当社が合理的に判断した場合、当社は、催告その他の手続を要することなく、本サイトの利用の拒否・停止、関係する取引の解除その他当社が適切と判断する措置を講じることができます。</p>",
       "privacy.h1": "プライバシーポリシー",
       "privacy.updatedPrefix": "最終更新日：",
       "privacy.updatedDate": "2026年3月25日",
@@ -489,7 +505,7 @@
         "<p>当社は、サイトの運営に必要な範囲（セキュリティや基本的な表示性能など）で Cookie または類似技術を使用する場合があります。また、設定の記憶や集計的な利用状況の把握のために使用する場合があります。ブラウザの設定で Cookie を制御できます。法令上同意が必要な非必須の Cookie 等については、活性化前に同意を得るものとします。</p>",
       "privacy.s5.h": "5. 第三者提供・委託・国外移転",
       "privacy.s5.p":
-        "<p>当社は、個人情報を販売しません。ホスティング、メール配信、お問い合わせフォームの送受信等の業務委託先に、機密保持および委託契約の下で必要な範囲で預託することがあります。また、法令に基づく場合、または当社の権利・安全や利用者の保護のために必要な場合に限り、第三者に提供することがあります。個人情報を国外に移転する場合は、個人情報保護法に従い、必要な措置を講じます。GDPR が適用される場合には、標準契約条項その他適法な保護措置により越境移転を行います。</p>",
+        "<p>当社は、個人情報を販売しません。ホスティング、メール配信、お問い合わせフォームに送信された内容の保存・管理（Supabase 等のクラウドデータベース。サーバーは日本国外に所在する場合があります）の業務委託先に、機密保持および委託契約の下で必要な範囲で預託することがあります。また、法令に基づく場合、または当社の権利・安全や利用者の保護のために必要な場合に限り、第三者に提供することがあります。個人情報を国外に移転する場合は、個人情報保護法に従い、必要な措置を講じます。GDPR が適用される場合には、標準契約条項その他適法な保護措置により越境移転を行います。</p>",
       "privacy.s6.h": "6. 保存期間とセキュリティ",
       "privacy.s6.p":
         "<p>個人情報は、本ポリシーに記載の利用目的の達成に必要な期間、または法令が定める期間に限り保存します。当社は、合理的な技術的・組織的安全管理措置により個人情報を保護します。インターネット上の送信は完全に安全ではありません。</p>",
@@ -600,12 +616,7 @@
   }
 
   const contactForm = document.getElementById("contact-form");
-  const contactFormNext = document.getElementById("contact-form-next");
   const contactFormSuccess = document.getElementById("contact-form-success");
-
-  if (contactFormNext && window.location.protocol.startsWith("http")) {
-    contactFormNext.value = window.location.origin + window.location.pathname + "?sent=1";
-  }
 
   if (contactForm && new URLSearchParams(window.location.search).get("sent") === "1") {
     contactForm.hidden = true;

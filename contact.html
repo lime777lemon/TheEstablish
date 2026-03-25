@@ -76,16 +76,13 @@
           >
             Thank you — your message was sent. We will reply by email as soon as we can.
           </p>
-          <form
-            class="contact-form"
-            id="contact-form"
-            method="POST"
-            action="https://formsubmit.co/info@theestablish.jp"
-          >
-            <input type="hidden" name="_subject" value="Website inquiry — The Establish LLC" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" id="contact-form-next" value="" />
+          <p class="contact-form-error" id="contact-form-error" role="alert" hidden></p>
+          <div class="visually-hidden" aria-hidden="true">
+            <span id="contact-i18n-sending" data-i18n="contact.formSending">Sending…</span>
+            <span id="contact-i18n-error" data-i18n="contact.formError">Error</span>
+            <span id="contact-i18n-not-configured" data-i18n="contact.formNotConfigured">Not configured</span>
+          </div>
+          <form class="contact-form" id="contact-form" method="post" action="#" novalidate>
             <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-field">
               <label for="contact-name"><span data-i18n="contact.formName">Name</span></label>
@@ -158,6 +155,8 @@
       </div>
     </footer>
 
+    <script src="supabase-config.js"></script>
     <script src="main.js"></script>
+    <script type="module" src="contact-form.js"></script>
   </body>
 </html>
