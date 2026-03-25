@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — The Establish</title>
+    <meta
+      name="description"
+      content="The Establish LLC (Godo Gaisya, Japan) — a studio practice spanning web, creative presence, and client support, told as one story."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="images/logo.png"
+            width="400"
+            height="400"
+            alt=""
+          />
+          <span class="logo-text">The Establish</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <div class="lang">
+            <label class="visually-hidden" for="lang-select">Language</label>
+            <select id="lang-select" class="lang-select" aria-label="Select language">
+              <option value="en" selected>English</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="web-programming.html" data-i18n="nav.webProgramming">Web programming</a></li>
+            <li><a href="about.html" aria-current="page" data-i18n="nav.about">About</a></li>
+            <li><a href="client-services.html" data-i18n="nav.clientServices">Client services</a></li>
+            <li><a href="company.html" data-i18n="nav.company">Company</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero page-hero--about">
+        <div class="container page-hero-inner">
+          <p class="page-hero-eyebrow" data-i18n="ab.eyebrow">Studio practice in Japan</p>
+          <h1 class="page-hero-title" data-i18n-html="ab.heroTitle">ABOUT<br />THE ESTABLISH</h1>
+          <p class="page-hero-lead" data-i18n="ab.lead">
+            Web craft, on-camera work, and practical support — kept in one conversation so your project does not fragment
+            across vendors.
+          </p>
+        </div>
+      </section>
+
+      <section class="wp-section" aria-labelledby="ab-story-heading">
+        <div class="container about-narrow">
+          <h2 class="wp-section-title" id="ab-story-heading" data-i18n="ab.storyHeading">How we work</h2>
+          <div class="legal-body" data-i18n-html="ab.story"></div>
+        </div>
+      </section>
+
+      <section class="wp-section wp-section--muted" aria-labelledby="ab-lines-heading">
+        <div class="container">
+          <h2 class="wp-section-title" id="ab-lines-heading" data-i18n="ab.linesHeading">What we hold together</h2>
+          <ul class="wp-grid about-lines-grid">
+            <li class="wp-card">
+              <h3 class="wp-card-title" data-i18n="ab.l1.title">Web &amp; digital</h3>
+              <p class="wp-card-desc" data-i18n="ab.l1.desc">
+                Design and front-end implementation with clear structure — sites that stay maintainable after launch.
+              </p>
+            </li>
+            <li class="wp-card">
+              <h3 class="wp-card-title" data-i18n="ab.l2.title">Beauty &amp; fashion modeling</h3>
+              <p class="wp-card-desc" data-i18n="ab.l2.desc">
+                On-camera presence and related coordination for skincare, beauty, and fashion productions.
+              </p>
+            </li>
+            <li class="wp-card about-lines-span">
+              <h3 class="wp-card-title" data-i18n="ab.l3.title">Client services</h3>
+              <p class="wp-card-desc" data-i18n="ab.l3.desc">
+                Correspondence, scheduling, and logistics-style support for companies and individuals — especially when it
+                sits next to our other work.
+              </p>
+            </li>
+          </ul>
+          <nav class="about-crosslinks" aria-label="Service pages">
+            <a class="about-crosslink" href="web-programming.html" data-i18n="ab.x1">Web programming</a>
+            <span class="about-crosssep" aria-hidden="true">·</span>
+            <a class="about-crosslink" href="client-services.html" data-i18n="ab.x2">Client services</a>
+            <span class="about-crosssep" aria-hidden="true">·</span>
+            <a class="about-crosslink" href="contact.html" data-i18n="ab.x3">Modeling</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="wp-section" aria-labelledby="ab-cta-heading">
+        <div class="container about-narrow">
+          <h2 class="wp-section-title" id="ab-cta-heading" data-i18n="ab.ctaHeading">Work with us</h2>
+          <p class="about-cta-lead" data-i18n="ab.ctaLead">
+            Share what you are building, shooting, or coordinating — we will suggest the right entry point and scope.
+          </p>
+          <div class="wp-cta">
+            <a class="btn btn-primary" href="contact.html" data-i18n="ab.cta">Contact</a>
+            <a class="btn btn-ghost" href="index.html" data-i18n="ab.backHome">Back to home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-block">
+          <a href="index.html" class="footer-brand">
+            <img
+              class="footer-logo"
+              src="images/logo.png"
+              width="400"
+              height="400"
+              alt=""
+            />
+            <span data-i18n="footer.brand">The Establish合同会社</span>
+          </a>
+        </div>
+        <p class="footer-copy">© 2024</p>
+        <div class="footer-legal-links">
+          <a href="company.html" class="footer-link" data-i18n="footer.company">Company</a>
+          <a href="tokushoho.html" class="footer-link" data-i18n="footer.tokushoho">Legal notice (commerce)</a>
+          <a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-social">
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/in/yukiko-ikeda-432144167/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Yukiko Ikeda on LinkedIn"
+          >
+            <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+            <span data-i18n="footer.linkedinLabel">LinkedIn</span>
+          </a>
+          <a
+            href="https://x.com/the_establish__"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (Twitter)"
+            >X</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

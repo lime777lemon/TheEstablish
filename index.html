@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Establish LLC — Web design / Model / Client services</title>
+    <meta
+      name="description"
+      content="The Establish LLC (Godo Gaisya, Japan) — Web & digital, services for businesses and individuals (incl. overseas), modeling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="images/logo.png"
+            width="400"
+            height="400"
+            alt=""
+          />
+          <span class="logo-text">The Establish</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <div class="lang">
+            <label class="visually-hidden" for="lang-select">Language</label>
+            <select id="lang-select" class="lang-select" aria-label="Select language">
+              <option value="en" selected>English</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+            <li><a href="web-programming.html" data-i18n="nav.webProgramming">Web programming</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="client-services.html" data-i18n="nav.clientServices">Client services</a></li>
+            <li><a href="company.html" data-i18n="nav.company">Company</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">
+            Screens, sets, and the details that keep you moving
+          </p>
+          <h1 class="hero-title" data-i18n="hero.title">
+            Establish Your Future For All Developers
+          </h1>
+          <p class="hero-sub" data-i18n="hero.production">YUKIKO IKEDA Production</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html" data-i18n="hero.cta">Contact us</a>
+            <a class="btn btn-ghost" href="#services" data-i18n="hero.secondaryCta">View services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-follow" aria-labelledby="hero-follow-heading">
+        <div class="container hero-follow-grid">
+          <figure class="hero-follow-figure" aria-hidden="true">
+            <svg
+              class="hero-follow-art"
+              viewBox="0 0 440 360"
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+            >
+              <defs>
+                <linearGradient id="hero-follow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f0ebe3" />
+                  <stop offset="55%" stop-color="#e5ddd2" />
+                  <stop offset="100%" stop-color="#d8cfc0" />
+                </linearGradient>
+                <linearGradient id="hero-follow-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8b6914" stop-opacity="0.12" />
+                  <stop offset="100%" stop-color="#8b6914" stop-opacity="0.28" />
+                </linearGradient>
+              </defs>
+              <rect width="440" height="360" rx="10" fill="url(#hero-follow-grad)" />
+              <rect
+                x="36"
+                y="44"
+                width="368"
+                height="132"
+                rx="6"
+                fill="#fff"
+                fill-opacity="0.72"
+                stroke="#1a1715"
+                stroke-opacity="0.06"
+              />
+              <line
+                x1="56"
+                y1="78"
+                x2="280"
+                y2="78"
+                stroke="#1a1715"
+                stroke-opacity="0.08"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="56"
+                y1="98"
+                x2="220"
+                y2="98"
+                stroke="#1a1715"
+                stroke-opacity="0.06"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <rect x="48" y="200" width="148" height="112" rx="6" fill="url(#hero-follow-accent)" />
+              <rect
+                x="220"
+                y="200"
+                width="172"
+                height="52"
+                rx="6"
+                fill="#1c1917"
+                fill-opacity="0.05"
+              />
+              <rect
+                x="220"
+                y="266"
+                width="120"
+                height="46"
+                rx="6"
+                fill="#1c1917"
+                fill-opacity="0.04"
+              />
+              <circle cx="352" cy="110" r="32" fill="none" stroke="#8b6914" stroke-width="1.5" opacity="0.45" />
+              <circle cx="352" cy="110" r="12" fill="#8b6914" fill-opacity="0.2" />
+            </svg>
+          </figure>
+          <div class="hero-follow-text">
+            <p class="hero-follow-kicker" data-i18n="heroFollow.kicker">Studio focus</p>
+            <h2 id="hero-follow-heading" class="hero-follow-heading" data-i18n="heroFollow.heading">
+              Precision across web, lens, and logistics
+            </h2>
+            <p class="hero-follow-tagline" data-i18n="heroFollow.tagline">
+              Whether you need a site that performs, a shoot that runs smoothly, or hands-on support for
+              business in Japan — we keep every piece aligned as one story.
+            </p>
+            <ul class="hero-follow-chips" role="list">
+              <li data-i18n="heroFollow.chip1">Web craft</li>
+              <li data-i18n="heroFollow.chip2">On-camera presence</li>
+              <li data-i18n="heroFollow.chip3">Business support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-quick" aria-labelledby="home-quick-heading">
+        <div class="container">
+          <p class="home-quick-kicker" data-i18n="home.quickEyebrow">Explore</p>
+          <h2 class="visually-hidden" id="home-quick-heading" data-i18n="home.quickAria">Quick links</h2>
+          <div class="home-quick-grid">
+            <a class="home-quick-card" href="web-programming.html">
+              <span class="home-quick-label" data-i18n="home.quick1.k">Web</span>
+              <span class="home-quick-title" data-i18n="home.quick1.t">Design &amp; programming</span>
+              <span class="home-quick-desc" data-i18n="home.quick1.d"
+                >Marketing sites, corporate pages, UI builds.</span
+              >
+              <span class="home-quick-go" aria-hidden="true">→</span>
+            </a>
+            <a class="home-quick-card" href="client-services.html">
+              <span class="home-quick-label" data-i18n="home.quick2.k">Support</span>
+              <span class="home-quick-title" data-i18n="home.quick2.t">Corporate &amp; individual clients</span>
+              <span class="home-quick-desc" data-i18n="home.quick2.d"
+                >Scheduling, correspondence, local coordination.</span
+              >
+              <span class="home-quick-go" aria-hidden="true">→</span>
+            </a>
+            <a class="home-quick-card" href="about.html">
+              <span class="home-quick-label" data-i18n="home.quick3.k">Studio</span>
+              <span class="home-quick-title" data-i18n="home.quick3.t">About The Establish</span>
+              <span class="home-quick-desc" data-i18n="home.quick3.d"
+                >How we think and how the pieces connect.</span
+              >
+              <span class="home-quick-go" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-preview" id="services" aria-labelledby="home-services-heading">
+        <div class="container">
+          <header class="home-services-intro">
+            <p class="home-services-kicker" data-i18n="home.servicesEyebrow">Services</p>
+            <h2 class="home-services-title" id="home-services-heading" data-i18n="home.servicesTitle">
+              Where we can plug in
+            </h2>
+            <p class="home-services-lead" data-i18n="home.servicesLead">
+              Three ways we usually show up for clients — each can stand alone or run alongside the others.
+            </p>
+          </header>
+          <div class="service-cards">
+            <article class="service-card">
+              <div class="service-card-meta">
+                <span class="num">01</span>
+                <span class="slash">/</span>
+                <span class="num dim">03</span>
+              </div>
+              <h2 class="service-card-title" data-i18n="card.web.title">Web design & web programming</h2>
+              <p class="service-card-desc" data-i18n="card.web.desc">
+                From layout and visuals to front-end code — we handle web design and web programming as one flow.
+              </p>
+              <a href="web-programming.html" class="card-link" data-i18n="common.details">Details</a>
+            </article>
+            <article class="service-card" id="client-services">
+              <div class="service-card-meta">
+                <span class="num">02</span>
+                <span class="slash">/</span>
+                <span class="num dim">03</span>
+              </div>
+              <h2 class="service-card-title" data-i18n="card.tour.title">Client services</h2>
+              <p class="service-card-desc" data-i18n="card.tour.desc">
+                Services for corporations and individuals, including overseas businesses — phone, email, vehicle arrangements, and more.
+              </p>
+              <a href="client-services.html" class="card-link" data-i18n="common.details">Details</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card-meta">
+                <span class="num">03</span>
+                <span class="slash">/</span>
+                <span class="num dim">03</span>
+              </div>
+              <h2 class="service-card-title" data-i18n="card.model.title">Freelance model</h2>
+              <p class="service-card-desc" data-i18n="card.model.desc">
+                I am a subcontracting model for all beauty and fashion work.
+              </p>
+              <a href="contact.html" class="card-link" data-i18n="common.details">Details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome" id="about">
+        <div class="container welcome-inner">
+          <h2 class="welcome-title" data-i18n="welcome.headline">Serious about the work behind the work.</h2>
+          <p class="welcome-tagline" data-i18n="welcome.tagline">
+            Web and code, creative shoots, and the unglamorous logistics — handled as one seamless studio practice.
+          </p>
+          <p class="welcome-body" data-i18n="welcome.body">
+            Based in Japan, we work in English and Japanese — handy when your production, site launch, and paperwork
+            all share the same deadline.
+          </p>
+          <a class="welcome-btn" href="about.html" data-i18n="welcome.aboutCta">About the studio</a>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 class="section-heading" id="faq-heading" data-i18n="faq.heading">FAQ</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="faq.q1">What is The Establish LLC?</summary>
+              <div class="faq-answer" data-i18n-html="faq.a1">
+                <p>
+                  The Establish LLC is a Japanese Godo Gaisya offering web and digital services,
+                  support for corporations and individuals (including overseas clients) related to our business purposes,
+                  and modeling for beauty and fashion.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq.q2">What is the contract type for client services?</summary>
+              <div class="faq-answer" data-i18n-html="faq.a2">
+                <p>
+                  These service engagements are arranged per project or retainer. Please contact us by phone or email
+                  with your dates, scope, and goals so we can propose the right arrangement.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq.q3">What is the contract arrangement for web design and programming work?</summary>
+              <div class="faq-answer" data-i18n-html="faq.a3">
+                <p>
+                  Design and programming are usually scoped as fixed deliverables (e.g. a defined site or feature set)
+                  or ongoing support. Share your timeline, stack preferences if any, and requirements so we can propose
+                  a clear quote.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-block">
+          <a href="index.html" class="footer-brand">
+            <img
+              class="footer-logo"
+              src="images/logo.png"
+              width="400"
+              height="400"
+              alt=""
+            />
+            <span data-i18n="footer.brand">The Establish合同会社</span>
+          </a>
+        </div>
+        <p class="footer-copy">© 2024</p>
+        <div class="footer-legal-links">
+          <a href="company.html" class="footer-link" data-i18n="footer.company">Company</a>
+          <a href="tokushoho.html" class="footer-link" data-i18n="footer.tokushoho">Legal notice (commerce)</a>
+          <a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-social">
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/in/yukiko-ikeda-432144167/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Yukiko Ikeda on LinkedIn"
+          >
+            <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+            <span data-i18n="footer.linkedinLabel">LinkedIn</span>
+          </a>
+          <a
+            href="https://x.com/the_establish__"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (Twitter)"
+            >X</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
