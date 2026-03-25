@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL メモ — The Establish（開発用）</title>
+    <meta name="description" content="Supabase 向け SQL の下書き・コピー用（ブラウザ内保存のみ）。実行はダッシュボードの SQL Editor で。" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sql-editor.css" />
+  </head>
+  <body class="sql-ed-page">
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="images/logo.png" width="400" height="400" alt="" />
+          <span class="logo-text">The Establish</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="company.html">Company</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="sql-ed-wrap">
+        <h1 class="sql-ed-title">SQL メモ</h1>
+        <p class="sql-ed-sub">
+          Supabase 用の SQL を書いてコピーするためのページです。実行は
+          <strong>Supabase Dashboard の SQL Editor</strong>
+          で行ってください（ブラウザの匿名キーからは任意 SQL は実行できません）。
+        </p>
+
+        <div class="sql-ed-banner" role="note">
+          内容はこのブラウザの <code>localStorage</code> に自動保存されます。本番 DB には接続していません。
+        </div>
+
+        <div class="sql-ed-toolbar">
+          <button type="button" class="sql-ed-btn sql-ed-btn--primary" id="sql-ed-copy">コピー</button>
+          <button type="button" class="sql-ed-btn" id="sql-ed-save-now">今すぐ保存</button>
+          <button type="button" class="sql-ed-btn" id="sql-ed-clear">クリア</button>
+          <button type="button" class="sql-ed-btn" id="sql-ed-template-contact">contact_inquiries テンプレ</button>
+          <a
+            class="sql-ed-link"
+            href="https://supabase.com/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Supabase を開く</a
+          >
+          <span class="sql-ed-status" id="sql-ed-status" aria-live="polite"></span>
+        </div>
+
+        <label class="visually-hidden" for="sql-ed-text">SQL</label>
+        <textarea
+          id="sql-ed-text"
+          class="sql-ed-text"
+          spellcheck="false"
+          wrap="off"
+          placeholder="-- ここに SQL を入力&#10;select now();"
+        ></textarea>
+
+        <p class="sql-ed-footnote">
+          リポジトリ内の定義ファイル:
+          <a href="supabase/contact_inquiries.sql">supabase/contact_inquiries.sql</a>
+          （テンプレートボタンと同内容）
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">開発用ツール · <a href="index.html">ホームへ</a></p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="sql-editor.js"></script>
+  </body>
+</html>

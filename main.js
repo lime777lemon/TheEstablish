@@ -247,8 +247,6 @@
       "co.dd.purposes":
         "<ol><li>Internet and digital information services; planning, development, operation, and maintenance of websites and software; advertising and marketing consulting and analysis; digital verification and recording; and SaaS and other information services.</li><li>Modeling, performances, and expressive activities; appearances in advertising, photography, video, and digital content; and related management, casting, production, creative and design work.</li><li>Services related to the foregoing for corporations and individuals, including overseas businesses.</li><li>All businesses incidental or related to the foregoing.</li></ol>",
       "toku.h1": "Specified commercial transactions (Japan)",
-      "toku.disclaimer":
-        "Template disclosure under the Act on Specified Commercial Transactions (特定商取引法). Align fees, payment terms, and cancellation rules with your actual contracts and legal advice.",
       "toku.dt.seller": "Seller (business operator)",
       "toku.dd.seller": "The Establish LLC (The Establish合同会社)",
       "toku.dt.manager": "Person responsible for operations",
@@ -527,8 +525,6 @@
       "co.dd.purposes":
         "<ol><li>インターネット及びデジタル技術を活用した情報提供、ウェブ・ソフトウェア等の企画・開発・運用・保守、広告・マーケティング関連の調査・分析・コンサルティング、デジタル検証・記録、情報提供サービス及びSaaS型サービスの企画・開発・運営</li><li>モデル・出演・表現活動、広告・宣伝・撮影・映像・デジタルコンテンツ等への出演、並びにこれらに関するマネジメント、キャスティング、プロデュース、クリエイティブ・デザイン制作及び企画・運営</li><li>海外事業者を含む法人又は個人に対する前各号に関連するサービスの提供</li><li>前各号に附帯又は関連する一切の事業</li></ol>",
       "toku.h1": "特定商取引法に基づく表記",
-      "toku.disclaimer":
-        "通信販売（役務の提供を含む）で消費者契約に該当する場合に求められる表示のひな形です。料金・支払・キャンセル等は実際の契約内容と顧問弁護士等の助言に合わせて修正してください。",
       "toku.dt.seller": "販売事業者名",
       "toku.dd.seller": "The Establish合同会社",
       "toku.dt.manager": "運営統括責任者",

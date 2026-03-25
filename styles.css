@@ -1320,17 +1320,6 @@ body {
   color: var(--text-muted);
 }
 
-.legal-disclaimer {
-  margin: 0 0 2rem;
-  padding: 0.85rem 1rem;
-  font-size: 0.82rem;
-  line-height: 1.5;
-  color: var(--text-muted);
-  background: var(--accent-soft);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 4px 4px 0;
-}
-
 .legal-section {
   margin-bottom: 1.75rem;
 }

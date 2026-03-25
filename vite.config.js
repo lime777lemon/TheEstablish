@@ -18,6 +18,7 @@ export default defineConfig({
         terms: "terms.html",
         privacy: "privacy.html",
         contact: "contact.html",
+        sqlEditor: "sql-editor.html",
       },
     },
   },
