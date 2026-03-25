@@ -29,6 +29,21 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+}
+
+.site-header,
+.site-footer {
+  flex-shrink: 0;
 }
 
 .visually-hidden {
@@ -55,6 +70,7 @@ body {
   z-index: 100;
   background: rgba(252, 250, 247, 0.97);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 1px 0 rgba(139, 105, 20, 0.08);
 }
@@ -902,6 +918,39 @@ body {
 
 .contact-back-link:hover {
   color: var(--accent);
+}
+
+/* Contact: 送信完了画面ではリード文を出さない */
+body.contact-form-sent .contact-lead {
+  display: none;
+}
+
+/* Contact: 送信完了後もビューポート内でレイアウトが潰れず、sticky ヘッダーが効くようにする */
+body.contact-form-sent .contact-page-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+body.contact-form-sent .contact-page-main .contact-section--page {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: min(72dvh, 36rem);
+  box-sizing: border-box;
+}
+
+body.contact-form-sent .contact-page-main .contact-inner {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body.contact-form-sent .contact-page-main .contact-section--page {
+    min-height: min(65dvh, 32rem);
+    padding-left: max(var(--space), env(safe-area-inset-left, 0px));
+    padding-right: max(var(--space), env(safe-area-inset-right, 0px));
+  }
 }
 
 /* Footer */

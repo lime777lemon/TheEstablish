@@ -14,6 +14,29 @@ function msg(id) {
   return el?.textContent?.trim() || "";
 }
 
+function scrollPageTop() {
+  const go = () => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  };
+  go();
+  requestAnimationFrame(go);
+  setTimeout(go, 0);
+  setTimeout(go, 120);
+  setTimeout(go, 350);
+}
+
+function applyContactSuccessState(form, successEl) {
+  form.hidden = true;
+  if (successEl) successEl.hidden = false;
+  document.body.classList.add("contact-form-sent");
+  const u = new URL(window.location.href);
+  u.searchParams.set("sent", "1");
+  window.history.replaceState({}, "", u);
+  scrollPageTop();
+}
+
 function initContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -31,8 +54,7 @@ function initContactForm() {
 
     const honey = form.querySelector('input[name="_honey"]');
     if (honey && honey.value) {
-      form.hidden = true;
-      if (successEl) successEl.hidden = false;
+      applyContactSuccessState(form, successEl);
       return;
     }
 
@@ -77,11 +99,7 @@ function initContactForm() {
     }
 
     form.reset();
-    form.hidden = true;
-    if (successEl) successEl.hidden = false;
-    const u = new URL(window.location.href);
-    u.searchParams.set("sent", "1");
-    window.history.replaceState({}, "", u);
+    applyContactSuccessState(form, successEl);
   });
 }
 

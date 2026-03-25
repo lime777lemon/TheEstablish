@@ -617,5 +617,15 @@
   if (contactForm && new URLSearchParams(window.location.search).get("sent") === "1") {
     contactForm.hidden = true;
     if (contactFormSuccess) contactFormSuccess.hidden = false;
+    document.body.classList.add("contact-form-sent");
+    const top = () => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+    top();
+    requestAnimationFrame(top);
+    setTimeout(top, 0);
+    setTimeout(top, 150);
   }
 })();
