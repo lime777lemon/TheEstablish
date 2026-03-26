@@ -1,20 +1,47 @@
 /**
  * Vercel Serverless: Supabase Database Webhook → Resend で info@ に通知
  * 環境変数: INQUIRY_WEBHOOK_SECRET, RESEND_API_KEY, NOTIFY_TO_EMAIL, NOTIFY_FROM_EMAIL（任意）
+ *
+ * 認証: Vercel の INQUIRY_WEBHOOK_SECRET と、次のいずれかが一致すること
+ * - ヘッダー x-webhook-secret / x-supabase-webhook-secret
+ * - ヘッダー Authorization: Bearer <同じ文字列>
+ * （Node はヘッダー名を小文字化するため小文字キーで参照）
  */
+function readIncomingWebhookSecret(req) {
+  const h = req.headers;
+  const direct =
+    h["x-webhook-secret"] ||
+    h["x-supabase-webhook-secret"] ||
+    h["x-hook-secret"];
+  if (direct) return String(direct).trim();
+
+  const auth = h["authorization"];
+  if (!auth) return "";
+  const s = String(auth).trim();
+  if (s.toLowerCase().startsWith("bearer ")) return s.slice(7).trim();
+  return s;
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     res.status(405).setHeader("Allow", "POST").json({ error: "method_not_allowed" });
     return;
   }
 
-  const expected = process.env.INQUIRY_WEBHOOK_SECRET;
-  const got =
-    req.headers["x-webhook-secret"] ||
-    req.headers["x-supabase-webhook-secret"] ||
-    req.headers["X-Webhook-Secret"];
-  if (!expected || got !== expected) {
-    res.status(401).json({ error: "unauthorized" });
+  const expected = (process.env.INQUIRY_WEBHOOK_SECRET || "").trim();
+  if (!expected) {
+    res
+      .status(500)
+      .json({ error: "missing_inquiry_webhook_secret", hint: "Set INQUIRY_WEBHOOK_SECRET in Vercel env" });
+    return;
+  }
+
+  const got = readIncomingWebhookSecret(req);
+  if (!got || got !== expected) {
+    res.status(401).json({
+      error: "webhook_secret_mismatch",
+      hint: "Supabase Webhook のヘッダー（x-webhook-secret または Authorization: Bearer）を Vercel と同じ値に",
+    });
     return;
   }
 

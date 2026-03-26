@@ -51,7 +51,10 @@
 ## トラブル時
 
 - Vercel の **Deployments → Functions → notify-inquiry** のログを確認  
-- `401` → Webhook のヘッダーと `INQUIRY_WEBHOOK_SECRET` が一致しているか  
+- **`401 webhook_secret_mismatch`**  
+  - Vercel に **`INQUIRY_WEBHOOK_SECRET`** が入っているか（未設定なら **`500 missing_inquiry_webhook_secret`** になります）  
+  - Supabase の Webhook に付けたヘッダーと **文字列が完全一致** か（前後スペースなし）  
+  - Supabase 側で **`Authorization: Bearer （同じ文字列）`** でも可（ダッシュボードで Bearer 形式を選んだ場合）  
 - `502` / Resend エラー → API キー、`from` ドメイン検証、送信先制限を確認  
 
 ## 代替案
