@@ -1,6 +1,9 @@
+import { Resend } from "resend";
+
 /**
  * Vercel Serverless: Supabase Database Webhook → Resend で info@ に通知
- * 環境変数: INQUIRY_WEBHOOK_SECRET, RESEND_API_KEY, NOTIFY_TO_EMAIL, NOTIFY_FROM_EMAIL（任意）
+ * 環境変数: INQUIRY_WEBHOOK_SECRET, RESEND_API_KEY
+ * 宛先・送信元（優先順）: INQUIRY_TO_EMAIL / NOTIFY_TO_EMAIL、RESEND_FROM / NOTIFY_FROM_EMAIL
  *
  * 認証: Vercel の INQUIRY_WEBHOOK_SECRET と、次のいずれかが一致すること
  * - ヘッダー x-webhook-secret / x-supabase-webhook-secret
@@ -85,35 +88,41 @@ export default async function handler(req, res) {
       return;
     }
 
-    const to = process.env.NOTIFY_TO_EMAIL || "info@theestablish.jp";
-    const from =
-      process.env.NOTIFY_FROM_EMAIL || "The Establish <onboarding@resend.dev>";
+    const to =
+      (process.env.INQUIRY_TO_EMAIL || process.env.NOTIFY_TO_EMAIL || "info@theestablish.jp").trim();
+    const from = (
+      process.env.RESEND_FROM ||
+      process.env.NOTIFY_FROM_EMAIL ||
+      "The Establish <onboarding@resend.dev>"
+    ).trim();
+
+    const resend = new Resend(resendKey);
+
+    console.log("[DEBUG] ABOUT TO SEND EMAIL");
+    console.log("[DEBUG] TO:", process.env.INQUIRY_TO_EMAIL ?? process.env.NOTIFY_TO_EMAIL ?? to);
+    console.log("[DEBUG] FROM:", process.env.RESEND_FROM ?? process.env.NOTIFY_FROM_EMAIL ?? from);
 
     const text = `Webサイトのお問い合わせフォームより\n\n名前: ${name}\nメール: ${email}\n\n---\n${message}\n`;
 
-    const r = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${resendKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: email,
-        subject: `[The Establish お問い合わせ] ${name}`,
-        text,
-      }),
+    const { data, error } = await resend.emails.send({
+      from,
+      to: [to],
+      reply_to: email,
+      subject: `[The Establish お問い合わせ] ${name}`,
+      text,
     });
 
-    const raw = await r.text();
-    if (!r.ok) {
-      console.error("Resend error", r.status, raw);
-      res.status(502).json({ error: "resend_failed", status: r.status });
+    if (error) {
+      console.error("Resend error", error);
+      res.status(502).json({
+        error: "resend_failed",
+        status: error.statusCode,
+        message: error.message,
+      });
       return;
     }
 
-    res.status(200).json({ ok: true });
+    res.status(200).json({ ok: true, id: data?.id });
   } catch (e) {
     console.error("notify-inquiry", e);
     res.status(500).json({ error: "internal", message: e instanceof Error ? e.message : String(e) });
