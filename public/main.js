@@ -6,7 +6,7 @@
       "nav.about": "About",
       "nav.clientServices": "Client services",
       "nav.contact": "Contact",
-      "nav.company": "Company",
+      "nav.company": "Company overview",
       "hero.eyebrow": "Screens, sets, and the details that keep you moving",
       "hero.title": "Establish Your Future For All Developers",
       "hero.production": "The Establish LLC (Godo Gaisya)",
@@ -27,6 +27,34 @@
       "home.servicesTitle": "Where we can plug in",
       "home.servicesLead":
         "Three ways we usually show up — each can stand alone or run alongside the others.",
+      "scope.eyebrow": "Capabilities",
+      "scope.title": "What our business covers",
+      "scope.lead":
+        "Registered business purposes, organized for readability as service areas — the broader context behind our work, alongside the three main service areas introduced on the home page.",
+      "scope.c1.title": "Digital products & platforms",
+      "scope.c1.desc":
+        "Internet and ICT-based information services; planning, building, and running websites, applications, software, digital content, and information systems; SaaS and platform businesses; digital verification, testing, observation, and recording — with related reporting and insight.",
+      "scope.c2.title": "Brand, UX & growth",
+      "scope.c2.desc":
+        "UI/UX design and advertising, marketing, and branding — research, analysis, strategy, and consulting to sharpen how you show up in market.",
+      "scope.c3.title": "Startups, ventures & investment",
+      "scope.c3.desc":
+        "Technical and operational support for startups and operators; investee development; securities and equity interests within our legal scope; portfolio and investment activities where applicable.",
+      "scope.c4.title": "Talent & creative production",
+      "scope.c4.desc":
+        "Modeling and on-screen work; management, casting, and production; creative and content production, design, and expressive projects — planned and delivered end to end.",
+      "scope.c5.title": "IP & content rights",
+      "scope.c5.desc":
+        "Creation, editing, distribution, and stewardship of works across media — programs, copy, image, video, audio, and design; intellectual property holding, licensing, sublicensing, and royalty administration.",
+      "scope.c6.title": "Operations & language",
+      "scope.c6.desc":
+        "Business support, secretarial and concierge-style assistance; reservations across hospitality, travel, and transport; translation and interpretation; accounting, bookkeeping, and back-office support.",
+      "scope.c7.title": "Japan & overseas clients",
+      "scope.c7.desc":
+        "We provide services in the areas above to corporations and individuals, including overseas operators — aligned with your language, timezone, and delivery expectations.",
+      "scope.c1.link": "Web programming & design",
+      "scope.note":
+        "This overview reflects our registered business purposes. Specific work is always scoped, quoted, and contracted individually.",
       "welcome.body":
         "Based in Japan, we work in English and Japanese — useful when your production, site launch, and admin tasks share the same week.",
       "welcome.aboutCta": "About the studio",
@@ -79,7 +107,7 @@
       "footer.privacy": "Privacy Policy",
       "footer.terms": "Terms of Service",
       "footer.brand": "The Establish合同会社",
-      "footer.company": "Company",
+      "footer.company": "Company overview",
       "footer.tokushoho": "Legal notice (commerce)",
       "wp.eyebrow": "Solid structure, expressive interfaces",
       "wp.heroTitle": "WEB PROGRAMMING<br />/ WEB DESIGN",
@@ -113,6 +141,7 @@
       "wp.p4.desc":
         "Deployment support, basic documentation, and optional ongoing care.",
       "wp.cta": "Start a project",
+      "wp.scopeLink": "See our full business scope on the Company overview page",
       "wp.backHome": "Back to home",
       "cs.eyebrow": "Corporations & individuals in Japan",
       "cs.heroTitle": "CLIENT<br />SERVICES",
@@ -156,7 +185,7 @@
         "Web craft, on-camera work, and practical client support — held in one conversation so your schedule does not split across disconnected vendors.",
       "ab.storyHeading": "How we work",
       "ab.story":
-        "<p>The Establish is a Japanese Godo Gaisya (LLC) operating as a compact studio. We care as much about clear scope, permissions, and follow-through as we do about craft — whether that craft is code, lighting on set, or a string of confirmations on a busy day.</p><p>The same clients often touch web production, creative shoots, and operational support within the same month. Rather than handing you off between unrelated parties, we keep those threads where they can stay coherent.</p><p>Registration details, the representative name, and formal disclosures are listed on our <a href=\"company.html\">Company</a> page.</p>",
+        "<p>The Establish is a Japanese Godo Gaisya (LLC) operating as a compact studio. We care as much about clear scope, permissions, and follow-through as we do about craft — whether that craft is code, lighting on set, or a string of confirmations on a busy day.</p><p>The same clients often touch web production, creative shoots, and operational support within the same month. Rather than handing you off between unrelated parties, we keep those threads where they can stay coherent.</p><p>Registration details, the representative name, and formal disclosures are listed on our <a href=\"company.html\">Company overview</a> page.</p>",
       "ab.linesHeading": "What we hold together",
       "ab.l1.title": "Web & digital",
       "ab.l1.desc":
@@ -232,7 +261,7 @@
       "privacy.s7.h": "7. Your rights and contact",
       "privacy.s7.p":
         "<p><strong>Japan:</strong> Under the APPI, you may request notification of purpose of use, disclosure, correction, addition or deletion, suspension of use, suspension of provision to third parties, or disclosure of records of provision to third parties, subject to statutory exceptions. Contact <a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a> or use the <a href=\"contact.html\">Contact</a> page.</p><p><strong>EEA, UK, Switzerland:</strong> Where the GDPR or equivalent law applies, you may have rights of access, rectification, erasure, restriction of processing, data portability, and objection to certain processing, and you may withdraw consent where processing is based on consent. You may lodge a complaint with your local supervisory authority.</p><p>We will respond to requests in line with applicable law. For all privacy inquiries: <a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a>.</p>",
-      "co.h1": "Company information",
+      "co.h1": "Company overview",
       "co.dt.tradeNameJa": "Trade name",
       "co.dd.tradeNameJa": "The Establish合同会社",
       "co.dt.rep": "Representative member",
@@ -243,9 +272,6 @@
       "co.dt.contact": "Contact",
       "co.dd.contact":
         "<p>Email: <a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a></p>",
-      "co.dt.biz": "Business activities",
-      "co.dd.purposes":
-        "<ol><li>Internet and digital information services; planning, development, operation, and maintenance of websites and software; advertising and marketing consulting and analysis; digital verification and recording; and SaaS and other information services.</li><li>Modeling, performances, and expressive activities; appearances in advertising, photography, video, and digital content; and related management, casting, production, creative and design work.</li><li>Services related to the foregoing for corporations and individuals, including overseas businesses.</li><li>All businesses incidental or related to the foregoing.</li></ol>",
       "toku.h1": "Specified commercial transactions (Japan)",
       "toku.dt.seller": "Seller (business operator)",
       "toku.dd.seller": "The Establish LLC (The Establish合同会社)",
@@ -284,7 +310,7 @@
       "nav.about": "概要",
       "nav.clientServices": "法人・個人向け",
       "nav.contact": "お問い合わせ",
-      "nav.company": "会社情報",
+      "nav.company": "会社概要",
       "hero.eyebrow": "画面もセットも、事業を進める細部まで",
       "hero.title": "すべてのクリエイターに、未来を築く土台を",
       "hero.production": "The Establish",
@@ -305,6 +331,34 @@
       "home.servicesTitle": "できること",
       "home.servicesLead":
         "主な接点は次の三つです。単独でも、組み合わせでも対応します。",
+      "scope.eyebrow": "事業領域",
+      "scope.title": "取り扱うスコープ",
+      "scope.lead":
+        "登記上の事業目的を、サービスとして読みやすく整理した一覧です。上の三つの入口に加え、ここまでを文脈として持っています。",
+      "scope.c1.title": "デジタルプロダクト・プラットフォーム",
+      "scope.c1.desc":
+        "インターネット及び情報通信技術を利用した情報提供サービスの企画・開発・運営・管理。ウェブサイト、アプリケーション、ソフトウェア、デジタルコンテンツ及び情報システムの企画・設計・開発・制作・運用・保守。SaaS型サービス、プラットフォーム及びデジタルサービス。表示確認・動作検証・観測・記録と、それに付随する情報提供。",
+      "scope.c2.title": "ブランド・UX・グロース",
+      "scope.c2.desc":
+        "UI/UXデザイン、広告、マーケティング、ブランディングに関する企画、調査、分析及びコンサルティング。市場での見え方と体験を磨く支援。",
+      "scope.c3.title": "スタートアップ・投資・ベンチャー",
+      "scope.c3.desc":
+        "スタートアップ企業及び事業者に対する技術支援、事業支援及びコンサルティング。投資事業及び投資先企業の育成支援。有価証券の取得・保有・運用・売却、株式・新株予約権その他の権利の取得及び保有など、法令の範囲内での投資・ポートフォリオ活動。",
+      "scope.c4.title": "タレント・クリエイティブ",
+      "scope.c4.desc":
+        "モデル、出演者、表現者としての活動並びに広告・宣伝・撮影・映像及びデジタルコンテンツ等への出演。マネジメント、キャスティング、プロデュース。クリエイティブ制作、コンテンツ制作、デザイン及び表現活動の企画・管理及び運営。",
+      "scope.c5.title": "知的財産・コンテンツ",
+      "scope.c5.desc":
+        "著作物（プログラム、ソフトウェア、文章、画像、映像、音声、デザインその他一切のコンテンツを含む）の制作、編集、利用、配信、販売及び管理。知的財産権の取得・保有・管理・利用・譲渡及び許諾、ライセンス供与、サブライセンス、ロイヤルティの取得及び管理。",
+      "scope.c6.title": "オペレーション・言語・事務",
+      "scope.c6.desc":
+        "企業及び個人に対する業務支援、秘書代行及びコンシェルジュサービス。飲食店、宿泊施設、交通機関等の予約及び手配。翻訳、通訳及び言語サービス。会計、経理及び事務処理に関する支援業務。",
+      "scope.c7.title": "国内外のお客様へ",
+      "scope.c7.desc":
+        "海外事業者を含む法人又は個人に対し、前各号に関するサービスを提供。言語・タイムゾーン・納品イメージに合わせたすり合わせのうえで対応します。",
+      "scope.c1.link": "Webプログラミング・デザインの詳細",
+      "scope.note":
+        "上記は登記上の事業目的を要約したものです。実際の業務内容・範囲・条件は、お問い合わせのうえ、都度見積・契約で確定します。",
       "welcome.body":
         "拠点は日本。英語・日本語でやり取りできます。撮影、サイト公開、事務手続きが同じ週に重なるときほど、一本の窓口があると楽になります。",
       "welcome.aboutCta": "スタジオについて",
@@ -356,7 +410,7 @@
       "footer.privacy": "プライバシーポリシー",
       "footer.terms": "利用規約",
       "footer.brand": "The Establish合同会社",
-      "footer.company": "会社情報",
+      "footer.company": "会社概要",
       "footer.tokushoho": "特定商取引法に基づく表記",
       "wp.eyebrow": "堅い情報設計と、伝わるインターフェース",
       "wp.heroTitle": "WEBプログラミング<br />/ WEBデザイン",
@@ -391,6 +445,7 @@
       "wp.p4.desc":
         "公開サポート、簡単なドキュメント、継続サポートもご相談ください。",
       "wp.cta": "案件の相談をする",
+      "wp.scopeLink": "取り扱うスコープは会社概要ページをご覧ください",
       "wp.backHome": "ホームに戻る",
       "cs.eyebrow": "法人・個人のお客様へ",
       "cs.heroTitle": "法人・個人向け<br />サービス",
@@ -434,7 +489,7 @@
         "Webの設計・実装、撮影・表現、法人・個人向けの実務サポート。複数の窓口に分断されないよう、ひとつの文脈でそろえます。",
       "ab.storyHeading": "取り組み方",
       "ab.story":
-        "<p>The Establishは、日本の会社法に基づく合同会社（Godo Gaisya）として、小さなスタジオの形で事業を行っています。コードや光の質だけでなく、範囲の明確さ、許諾、事後のフォローまで、仕事の成立に必要なところまで含めて整えることに重きを置いています。</p><p>同じお客様が、同じ月のうちにWeb制作、クリエイティブ撮影、現場や連絡業務のサポートをまたがることは少なくありません。関係者がバラバラになるより、一本の線でつながった方が速く、安全だと考えています。</p><p>登記情報、代表者、法令に基づく表示は<a href=\"company.html\">会社情報</a>に記載しています。</p>",
+        "<p>The Establishは、日本の会社法に基づく合同会社（Godo Gaisya）として、小さなスタジオの形で事業を行っています。コードや光の質だけでなく、範囲の明確さ、許諾、事後のフォローまで、仕事の成立に必要なところまで含めて整えることに重きを置いています。</p><p>同じお客様が、同じ月のうちにWeb制作、クリエイティブ撮影、現場や連絡業務のサポートをまたがることは少なくありません。関係者がバラバラになるより、一本の線でつながった方が速く、安全だと考えています。</p><p>登記情報、代表者、法令に基づく表示は<a href=\"company.html\">会社概要</a>に記載しています。</p>",
       "ab.linesHeading": "三本柱として扱っていること",
       "ab.l1.title": "Web・デジタル",
       "ab.l1.desc":
@@ -510,7 +565,7 @@
       "privacy.s7.h": "7. お客様の権利とお問い合わせ",
       "privacy.s7.p":
         "<p><strong>日本にお住まいの方：</strong>個人情報保護法に基づき、利用目的の通知、保有個人データの開示、訂正・追加・削除、利用の停止、第三者提供の停止、第三者提供記録の開示を請求できる場合があります（法に定める例外あり）。ご請求・お問い合わせは <a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a> または <a href=\"contact.html\">お問い合わせ</a> ページからご連絡ください。</p><p><strong>EEA・英国・スイス等の方：</strong>GDPR または同等の法令が適用される場合、アクセス、訂正、消去、処理の制限、データポータビリティ、一定の処理への異議、同意に基づく処理に関する同意の撤回などの権利があり、監督当局に苦情を申し立てることができる場合があります。</p><p>いずれのご請求についても、適用法に従い対応します。個人情報の取扱いに関するお問い合わせ先：<a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a>。</p>",
-      "co.h1": "会社情報",
+      "co.h1": "会社概要",
       "co.dt.tradeNameJa": "商号",
       "co.dd.tradeNameJa": "The Establish合同会社",
       "co.dt.rep": "代表者",
@@ -521,9 +576,6 @@
       "co.dt.contact": "お問い合わせ",
       "co.dd.contact":
         "<p>メール： <a href=\"mailto:info@theestablish.jp\">info@theestablish.jp</a></p>",
-      "co.dt.biz": "事業内容",
-      "co.dd.purposes":
-        "<ol><li>インターネット及びデジタル技術を活用した情報提供、ウェブ・ソフトウェア等の企画・開発・運用・保守、広告・マーケティング関連の調査・分析・コンサルティング、デジタル検証・記録、情報提供サービス及びSaaS型サービスの企画・開発・運営</li><li>モデル・出演・表現活動、広告・宣伝・撮影・映像・デジタルコンテンツ等への出演、並びにこれらに関するマネジメント、キャスティング、プロデュース、クリエイティブ・デザイン制作及び企画・運営</li><li>海外事業者を含む法人又は個人に対する前各号に関連するサービスの提供</li><li>前各号に附帯又は関連する一切の事業</li></ol>",
       "toku.h1": "特定商取引法に基づく表記",
       "toku.dt.seller": "販売事業者名",
       "toku.dd.seller": "The Establish合同会社",

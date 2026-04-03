@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/web-programming", "destination": "/web-programming.html" },
+    { "source": "/company", "destination": "/company.html" }
+  ]
+}

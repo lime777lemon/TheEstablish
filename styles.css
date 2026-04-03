@@ -129,6 +129,10 @@ body > main {
   object-fit: contain;
 }
 
+.page-home .logo-img {
+  filter: contrast(1.07) saturate(1.14);
+}
+
 .logo-text {
   line-height: 1;
 }
@@ -273,7 +277,7 @@ body > main {
   position: relative;
   padding: clamp(3rem, 12vw, 7rem) var(--space);
   text-align: center;
-  background: linear-gradient(180deg, var(--bg) 0%, #ebe6de 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, #e4dcd0 100%);
   overflow: hidden;
 }
 
@@ -286,8 +290,9 @@ body > main {
   height: 120%;
   background: radial-gradient(
     ellipse 55% 42% at 50% 0%,
-    rgba(139, 105, 20, 0.16) 0%,
-    transparent 68%
+    rgba(166, 124, 10, 0.24) 0%,
+    rgba(139, 105, 20, 0.1) 45%,
+    transparent 70%
   );
   pointer-events: none;
 }
@@ -378,7 +383,7 @@ body > main {
 /* Hero follow — visual + statement */
 .hero-follow {
   padding: clamp(2.5rem, 8vw, 5rem) 0;
-  background: linear-gradient(180deg, #ebe6de 0%, #f6f3ee 38%, var(--bg) 100%);
+  background: linear-gradient(180deg, #e2d9cc 0%, #f2ebe2 36%, var(--bg) 100%);
   border-top: 1px solid var(--border);
 }
 
@@ -402,13 +407,14 @@ body > main {
 
 .hero-follow-figure {
   margin: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(139, 105, 20, 0.22);
   box-shadow:
-    0 4px 0 rgba(139, 105, 20, 0.06),
-    0 28px 64px rgba(26, 23, 21, 0.1);
-  background: #fff;
+    0 4px 0 rgba(139, 105, 20, 0.1),
+    0 28px 56px rgba(26, 23, 21, 0.12);
+  /* SVG と同じ向き・色で角丸の外周まで塗る（白抜け防止） */
+  background: linear-gradient(135deg, #f7f0e6 0%, #e8dcc8 50%, #cfba8f 100%);
 }
 
 .hero-follow-art {
@@ -466,9 +472,9 @@ body > main {
   text-transform: uppercase;
   padding: 0.45rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.65);
-  color: var(--text-muted);
+  border: 1px solid rgba(139, 105, 20, 0.28);
+  background: rgba(255, 255, 255, 0.88);
+  color: #4a4540;
 }
 
 /* Home — quick links strip */
@@ -674,6 +680,131 @@ body > main {
 
 .card-link:hover {
   text-decoration: underline;
+}
+
+/* Business scope (registered purposes, marketing copy) */
+.scope-section {
+  padding: clamp(2.5rem, 7vw, 4.5rem) 0;
+  background: var(--bg);
+}
+
+.scope-intro {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 2.25rem;
+}
+
+.scope-kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+.scope-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.65rem, 4vw, 2.15rem);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.scope-lead {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.scope-item {
+  padding: 1.5rem 1.6rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(139, 105, 20, 0.04);
+  transition: box-shadow 0.2s;
+}
+
+.scope-item:hover {
+  box-shadow: 0 10px 36px rgba(26, 23, 21, 0.07);
+}
+
+.scope-item-wide {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 720px) {
+  .scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-item-wide {
+    grid-column: auto;
+  }
+}
+
+.scope-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.scope-item-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.scope-note {
+  margin: 2rem auto 0;
+  max-width: 40rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  text-align: center;
+  opacity: 0.92;
+}
+
+.scope-item-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.scope-item-link:hover {
+  text-decoration: underline;
+}
+
+.company-page-main .legal-inner {
+  padding-bottom: 0;
+}
+
+.company-page-main .legal-inner .legal-h1 {
+  margin-bottom: 2rem;
+}
+
+.company-scope.scope-section {
+  margin-top: 0;
 }
 
 /* Welcome */
@@ -1269,6 +1400,24 @@ body.contact-form-sent .contact-page-main .contact-inner {
   font-size: 0.92rem;
   color: var(--text-muted);
   line-height: 1.55;
+}
+
+.wp-scope-note {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.wp-scope-link {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 105, 20, 0.35);
+  text-underline-offset: 0.2em;
+}
+
+.wp-scope-link:hover {
+  color: var(--accent);
+  text-decoration-color: rgba(139, 105, 20, 0.55);
 }
 
 .wp-cta {
