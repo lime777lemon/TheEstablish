@@ -380,6 +380,27 @@ body > main {
   color: var(--accent);
 }
 
+/* Full-width image under hero */
+.hero-banner {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  line-height: 0;
+}
+
+.hero-banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(42vh, 520px);
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-banner--light {
+  background: #f6f6f6;
+}
+
 /* Hero follow — visual + statement */
 .hero-follow {
   padding: clamp(2.5rem, 8vw, 5rem) 0;
