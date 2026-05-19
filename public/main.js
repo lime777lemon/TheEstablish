@@ -79,6 +79,20 @@
       "welcome.headline": "Serious about the work behind the work.",
       "welcome.tagline":
         "Web and code, creative shoots, and the unglamorous logistics — handled as one seamless studio practice.",
+      "presents.kicker": "The Establish presents",
+      "presents.aria": "Related platforms",
+      "presents.contactLabel": "Contact",
+      "presents.vt.platformEn": "Website Observation Platform",
+      "presents.vt.platformJa": "Webサイト観測プラットフォーム",
+      "presents.vt.audience":
+        "For ad agencies and marketers, web studios, and companies expanding overseas — including teams operating in Japan.",
+      "presents.vt.visit": "viewtrace.net →",
+      "presents.beauty.badge": "Opening soon",
+      "presents.beauty.subtitle":
+        "Beauty medical devices & beauty products — vendor subscription",
+      "presents.beauty.audience":
+        "For manufacturers and brands in beauty medical devices — vendor subscription and curated commerce.",
+      "presents.beauty.visit": "theestablishbeauty.com →",
       "faq.q1": "What is The Establish LLC?",
       "faq.a1":
         "<p>The Establish LLC is a Japanese Godo Gaisya (limited liability company) offering web and digital services, support for corporations and individuals (including overseas clients) related to our business purposes, and modeling for beauty and fashion.</p>",
@@ -383,6 +397,18 @@
       "welcome.headline": "つくる。届ける。伴走する。",
       "welcome.tagline":
         "Web・プログラミング、撮影・表現、法人・個人向けサポート。バラバラの発注ではなく、一本の線で。",
+      "presents.kicker": "The Establish presents",
+      "presents.aria": "関連プラットフォーム",
+      "presents.contactLabel": "お問い合わせ",
+      "presents.vt.platformEn": "Website Observation Platform",
+      "presents.vt.platformJa": "Webサイト観測プラットフォーム",
+      "presents.vt.audience":
+        "広告代理店・マーケター、Web制作会社、海外展開企業の方（日本国内のチームも含みます）。",
+      "presents.vt.visit": "viewtrace.net →",
+      "presents.beauty.badge": "開設中",
+      "presents.beauty.subtitle": "美容医療機器と美容用品の Vendor Subscription",
+      "presents.beauty.audience": "美容医療機器の企業のお客様向けです。",
+      "presents.beauty.visit": "theestablishbeauty.com →",
       "faq.q1": "The Establish とは？",
       "faq.a1":
         "<p>The Establish は、日本の会社法に基づくGodo Gaisya（有限責任会社）です。Web・デジタル領域の設計・制作、海外事業者を含む法人・個人向けの関連サービス、ビューティ・ファッション分野のモデル等の事業を行っています。</p>",
