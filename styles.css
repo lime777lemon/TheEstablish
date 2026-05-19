@@ -929,6 +929,7 @@ body > main {
 }
 
 .presents-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
@@ -936,6 +937,44 @@ body > main {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.presents-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(26, 23, 21, 0.08);
+}
+
+.presents-card--viewtrace:hover {
+  border-color: rgba(30, 64, 120, 0.42);
+  box-shadow: 0 10px 36px rgba(30, 64, 120, 0.12);
+}
+
+.presents-card--beauty:hover {
+  border-color: rgba(180, 100, 100, 0.4);
+  box-shadow: 0 10px 36px rgba(168, 72, 72, 0.1);
+}
+
+.presents-card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.presents-card-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.presents-card > :not(.presents-card-link) {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .presents-card--viewtrace {
@@ -978,15 +1017,20 @@ body > main {
   font-weight: 600;
   margin: 0;
   line-height: 1.2;
+  color: var(--text);
 }
 
-.presents-card-name a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.presents-card-name a:hover {
+.presents-card:hover .presents-card-name {
   color: var(--accent);
+}
+
+.presents-card--viewtrace:hover .presents-card-name {
+  color: #1e4078;
+}
+
+.presents-card--beauty:hover .presents-card-name,
+.presents-card--beauty:hover .presents-card-visit {
+  color: #8f4a4a;
 }
 
 .presents-card-platform {
@@ -1019,14 +1063,18 @@ body > main {
   color: var(--text);
 }
 
-.presents-card-contact a {
+.presents-card-email {
   display: inline-block;
   margin-left: 0.35rem;
   color: var(--accent);
   word-break: break-all;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
-.presents-card-contact a:hover {
+.presents-card-email:hover {
   text-decoration: underline;
 }
 
@@ -1035,14 +1083,17 @@ body > main {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  text-decoration: none;
   color: var(--text-muted);
   align-self: flex-start;
   transition: color 0.2s;
 }
 
-.presents-card-visit:hover {
+.presents-card:hover .presents-card-visit {
   color: var(--accent);
+}
+
+.presents-card--viewtrace:hover .presents-card-visit {
+  color: #1e4078;
 }
 
 /* FAQ */
